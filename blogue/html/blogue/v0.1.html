@@ -1,0 +1,81 @@
+<!--main-template-->
+<main>
+    <div class="main_top">
+        <h2>v0.1- layout & template</h2>
+        <div class="date">
+            <time datetime="">2024-7-14</time> created // 
+            <time datetime="">2024-7-15</time> editied
+        </div>
+    </div>
+    <article>
+        <p><a href="/blogue/html/blogue/roadmap.html">임시 돌아가기 링크🔗</a></p>
+        <h3>홈페이지부터 쌩 HTML로 시작했다면</h3>
+            <section>
+                    <p>
+                        웃기긴 했을거라 생각한다. 하지만 나는 정리강박이 있고, 시멘틱 태그의 정리 방식에 빠지고 말았다. 그러니 이 페이지를 홈페이지에 삽입해 스타일이 적용되기 전까지 이 날것의 문서를 즐기는 것으로 만족한다.
+                    </p>
+            </section>
+        <hr>
+        <h3>프로젝트 폴더 생성</h3>
+        <div class="sect_double">
+            <section>
+                <h4>1. root 폴더- 웹사이트의 기본 구조</h4>
+                <p>
+                    하나의 웹사이트는 같은 폴더 안에 들어있어야 한다. 최상위의 root 폴더, 홈페이지를 나타내기로 약속한 index.html, 브라우저마다 다른 기본 스타일을 초기화하는 reset.css, 모든 파일에 공통적으로 적용시킬 style.css 같이 폴더 관리에 도움이 될 만한 기본 규칙들을 따라 만들었다.
+                </p>
+                <h4>정리</h4>
+                <p>
+                    웹문서가 되기 위한 최소 조건은 index.html 파일 하나뿐이고, 이 페이지를 작성하는 지금을 기준으로 이 웹사이트에는 별표한 폴더/파일만 있다.
+                </p>
+                <hr>
+            </section>
+<pre>
+📂 blogue
+┣ 📄 index.html *
+┣ 📄 reset.css
+┣ 📄 style.css *
+┣ 📄 script.js
+┣ 🖼️ logo.png
+┣ 📂 img *
+┣ 📂 html *
+┣ 📂 template
+┗ 📂 font *
+</pre>
+        </div>
+        <hr class="hr_black">
+            <section>
+                <h4>2. html 폴더- 주요/부가 목적에 따른 페이지 분리</h4>
+                <p>
+                    주요 목적은 blogue에 하나의 기능을 추가하는 일련의 과정을 검색 엔진을 통해 노출시키고, 이를 통해 프로그래밍을 배우는 진짜 목적을 초기부터 하나씩 달성할 수 있도록 하는 것이다. 예를 들면 '다크 모드' 기능을 추가하는 글은 프로젝트 페이지의 주요 컨텐츠 중 일부가 될 것이고, 그 과정에서 쓰인 'html의 버튼 태그', '버튼의 모양을 바꿀 수 있는 css 속성들', '버튼을 작동하게 하는 js 코드' 라는 조각들은 다른 페이지에 모아서 여러 코드에 대한 정보를 기록하고 제공하는 (부가적) 역할도 수행할 수 있을 것이다. 그리고 하나 더, 프로젝트를 시작하고 지속할 영감을 받고, 정보를 제공받은 타 블로그, 유튜브 채널들을 언급하며 감사를 표하는 페이지를 따로 만들 것이다.
+                </p>
+            </section>
+            <hr>
+        <div class="sect_double">
+            <section>
+                <h4>정리</h4>
+                <p>
+                    홈에서 접근할 수 있는 3개의 메인 페이지는 project, code, thank로 하고, code는 언어별로 하위 항목을, thank는 크레딧처럼 단일 페이지에서 스크롤하면 순서대로 볼 수 있게 하되 편리한 이동을 위한 목차를 더한다. project는 현재 하나밖에 없으니 blogue 프로젝트의 에피소드를 하위 항목으로 삼는다. 보기 쉽게 나타내면 다음과 같다.
+                </p>
+            </section>
+<pre>
+📂 html
+┣ projects
+┃ ┗ blogue
+┃   ┣ roadmap
+┃   ┣ episode 1
+┃   ┣ ...
+┃   ┗ episode n
+┣ codes
+┃ ┣ html
+┃ ┣ css
+┃ ┣ javascript
+┃ ┗ ...
+┗ thanks
+  ┣ 생활코딩 channel
+  ┣ inpa dev tistory
+  ┗ ...
+</pre>
+        </div>
+        <hr class="hr_black">
+    </article>
+</main>
